@@ -8,6 +8,9 @@ def main_wrapper():
         f"This is the start of our python project, we will be starting off with this wrapper main function called {main_wrapper.__name__}")
 
     utils.solid_example_1(example_param_1="a", example_2_param=1)
+    utils.solid_example_3()
+    utils.solid_example_2(2.9)
+
     # Stuff here - wrapper!
     # project structuring for modularity, maintainability, and separation of concerns.
     # 2. git pull

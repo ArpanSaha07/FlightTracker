@@ -5,8 +5,7 @@ def solid_example_1(*, example_param_1: str, example_2_param: int):
     :param example_2_param:
     :return:
     '''
-
-    #TODO: You must do this.
+    pass
 
 
 def solid_example_2(example_param_1: float) -> int:
@@ -19,5 +18,10 @@ def solid_example_2(example_param_1: float) -> int:
 
 
 def solid_example_3(*, example_param: float=2.4):
+    '''
+
+    :param example_param:
+    :return:
+    '''
 
     pass
