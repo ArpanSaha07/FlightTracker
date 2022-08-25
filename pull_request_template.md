@@ -12,5 +12,4 @@ _Explain in a few lines how and what this PR is trying to achieve as well as wha
 _Describe how the reviewers can test this PR_
 
 ### Additional Notes
-__Add any additional notes for the reviewers_
-
+_Add any additional notes for the reviewers_
