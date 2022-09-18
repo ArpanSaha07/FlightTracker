@@ -2,6 +2,7 @@ import requests
 from api.config import settings
 
 ROOT_URL = settings.ROOT_URL
+
 def states_accessor():
     # Go through the doc api examples!
     url = f"{ROOT_URL}/states/all"
