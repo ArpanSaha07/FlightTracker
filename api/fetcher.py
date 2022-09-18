@@ -1,9 +1,10 @@
 import requests
+from api.config import settings
 
-
+ROOT_URL = settings.ROOT_URL
 def states_accessor():
     # Go through the doc api examples!
-    url = f"https://opensky-network.org/api/states/all"
+    url = f"{ROOT_URL}/states/all"
     r = requests.get(url)
     if not r.ok:
         raise RuntimeError(r.json())
@@ -11,7 +12,7 @@ def states_accessor():
 
 
 def tracks_accessor():
-    url = f"https://opensky-network.org/api/tracks/all?icao24=3c4b26&time=0"
+    url = f"{ROOT_URL}/tracks/all?icao24=3c4b26&time=0"
     r = requests.get(url)
     if not r.ok:
         raise RuntimeError(r.json())
