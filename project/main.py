@@ -1,6 +1,9 @@
 from api import fetcher
 from data import aggregate
+from project.config import settings
 
+START_DT = settings.START_DT
+END_DT = settings.END_DT
 
 # Let's start in main.py showing some wrapper patterns and depicting method attributes.
 # Explore with pushes and pulls and view on GitHub!
@@ -26,6 +29,8 @@ def main_wrapper():
 
     #5. Need to introduce fixed dataset (link). Adding data_ignore to env
     flight_list_fixed = aggregate.fixed_dataset()
+
+    df = aggregate.forming_dataset(start_time=START_DT, end_time=END_DT)
 
     #6.
     print("This is the end of our python project")
