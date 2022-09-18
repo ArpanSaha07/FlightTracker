@@ -1,4 +1,6 @@
 __pycache__
+data_set/
+data_to_ignore/
 *.log
 *.out
 *.pdf

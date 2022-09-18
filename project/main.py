@@ -1,5 +1,5 @@
 from api import fetcher
-
+from data import aggregate
 
 # Let's start in main.py showing some wrapper patterns and depicting method attributes.
 # Explore with pushes and pulls and view on GitHub!
@@ -22,6 +22,9 @@ def main_wrapper():
     # fetcher.tracks_accessor()
 
     #4.
+
+    #5. Fixed dataset
+    flight_list_fixed = aggregate.fixed_dataset()
 
     print("This is the end of our python project")
 
