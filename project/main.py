@@ -1,4 +1,6 @@
-from api import utils
+from api import fetcher
+
+
 # Let's start in main.py showing some wrapper patterns and depicting method attributes.
 # Explore with pushes and pulls and view on GitHub!
 # git remote add new_origin https://github.com/mowglu/MIAE-Python and then use git pull new_origin <<commit>>
@@ -7,16 +9,19 @@ def main_wrapper():
     print(
         f"This is the start of our python project, we will be starting off with this wrapper main function called {main_wrapper.__name__}")
 
-    utils.solid_example_1(example_param_1="a", example_2_param=1)
-    utils.solid_example_3()
-    utils.solid_example_2(2.9)
-
     # Stuff here - wrapper!
     # project structuring for modularity, maintainability, and separation of concerns.
     # 2. git pull
 
     # set up a .gitignore and a .pull_template
-    # 3.
+    # 3. API example. Creating fetcher. from __init__. Create fetcher for states_accessor and tracks_accessor.
+    # Create config with pydantic baseSettings. Use env variables and use PyCharm.env files!
+
+    # API fetcher examples
+    fetcher.states_accessor()
+    # fetcher.tracks_accessor()
+
+    #4.
 
     print("This is the end of our python project")
 
